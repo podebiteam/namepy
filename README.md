@@ -1,6 +1,8 @@
 # namepy
-Naming System Based on 5 digits characted,indexing 5 digits of vocal alphabet and 8 digits of unvocal alphabet
+Naming System Based on 5 digits character,indexing 5 digits of vocal alphabet and 8 digits of unvocal alphabet
 randomize each index number and make some signature for it
+
+# Version 1.0
 
 # Region Detector
 
@@ -26,6 +28,7 @@ still bugy and need more improvement.
 # Primitive Codes 
 some codes of mine are pretty much primitive,i realized that
 but,i won't loose the power of Python's simplicity
+
 
 
 

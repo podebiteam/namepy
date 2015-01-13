@@ -2,6 +2,8 @@
 Naming System Based on 5 digits character,indexing 5 digits of vocal alphabet and 8 digits of unvocal alphabet
 randomize each index number and make some signature for it
 
+# Project Page : http://vickydasta.github.io/namepy/
+
 # Version 1.0
 
 # Region Detector

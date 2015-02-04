@@ -1,5 +1,6 @@
 '''
-the simplicity
+namepy
+by vickydasta
 '''
 import random
 from namepyMod import generateName
@@ -11,7 +12,6 @@ def main():
 	list1=list(l)
 	list2=list(v)
 	for a in range(len(l)):
-		print 'ver 1'
 		generateName(list1,list2,5)
 
 if __name__ == '__main__':

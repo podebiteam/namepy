@@ -1,4 +1,4 @@
-known bug :
+known bugs :
 
 - namepymod 
 - checknamepresent 

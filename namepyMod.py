@@ -1,8 +1,14 @@
 #!/usr/bin/env python
-import random,urllib2
+import random,urllib2,string
 from random import shuffle as randomize
 
 present_word = ['acuh','amin','antah','']
+
+def getalph():
+	return string.letters
+
+def vocal():
+	return 'aiueo'
 
 def name_meaning_present(name):
 	'''
@@ -86,7 +92,7 @@ def region_detector(name):
 		pass
 
 
-def generate_first_name_len_5(list1,list2):
+def gname5(list1,list2):
 	pass
 	'''generate random name with random alphabet
 	'''

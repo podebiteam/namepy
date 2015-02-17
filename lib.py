@@ -17,9 +17,8 @@ hx=random.choice([0,1,2,3,4,])
 #present_word = ['acuh','amin','antah','']
 
 def checkdb(txt,s):
-    txt='db.txt'
     with open(txt,'r') as re:
-        for a in re:
+        for a in re.readlines():
             if a == s:
                 stat = True
             else:

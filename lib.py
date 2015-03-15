@@ -10,7 +10,7 @@ from random import shuffle as randomize
 
 cons=['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n',
       'p', 'q',  'r', 's', 't', 'v', 'w', 'x', 'y', 'z']
-voc=['a','i','u','e','e']
+voc=['a','i','u','e','o']
 hy=random.choice([0,1,2,3,4,5,6,7])
 hx=random.choice([0,1,2,3,4,])
 

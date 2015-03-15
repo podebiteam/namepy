@@ -12,17 +12,17 @@ def vocal():
 
 def name_meaning_present(name):
 	'''
-	many parents confused to decide which name is used to his son/daughter's name
-	and much affraid of these name is being used by another kids (in this case the parent who won't to be mainstream)
-	this situation,pretty much simple in my head.
+	many parents are confused to decide which name is used for his son/daughter's name
+	and much affraid of these names are being used by other kids (in this case, the parents who wouldn't like to be "mainstream")
+	this situation, pretty much simple in my head.
 
-	another one situation is giving name to something like mountaint maybe,or for some unnamed storm out there ?
+	another situation is giving name to something like mountain perhaps,or for some unnamed storm out there ?
 
-	name_meaning_present(name) --> checking whether the name has a mean or not
-	generateName(list1, list2, num=5) --> generate random name from list with len(num)
-	region_detector --> detect name region based on it signature (because i believe in fact that every name has it's own signature)
+	name_meaning_present(name) --> checking whether the name has a meaning or not
+	generateName(list1, list2, num=5) --> generating random name from list with len(num)
+	region_detector --> detecting name region based on its signature (because i believe in fact that every name has its own signature)
 	'''
-	pass #bugy,remove pass to know,if name mean is present
+	pass #bugy,remove pass to know,if name meaning is present
 	global status
 	status = ''
 	url=urllib2.urlopen('http://www.morewords.com/word/'+name)

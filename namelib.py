@@ -2,8 +2,6 @@
 import random,urllib2,string
 from random import shuffle as randomize
 
-present_word = ['acuh','amin','antah','']
-
 def getalph():
 	return string.letters
 
@@ -28,10 +26,11 @@ def name_meaning_present(name):
 	url=urllib2.urlopen('http://www.morewords.com/word/'+name)
 	read_data=url.read()
 	if re.findall("No words found in this wordlist when searching for",read_data) != []:
-		status = 'Present'
+		status = True
 	else:
-		status='Unpresent'
-	print status
+		status= False
+	return status
+	
 def generateName2(list1,list2,num=5):
 	global final
 	final = ''
@@ -66,7 +65,11 @@ def generateName(list1,list2,num=5):
 				final=a+b+list1[INDEX2]+list2[INDEX2]+list1[INDEX1]+list2[INDEX2]
 			print final
 
-def region_detector(name):
+def region_detector(name): 
+	pass 
+	'''
+	region detector,currently on development
+	'''
 	global region
 	region = ''
 	'''

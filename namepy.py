@@ -3,7 +3,7 @@ namepy
 by vickydasta
 '''
 import random
-from namepyMod import generateName
+from namelib import generateName
 
 def main():
 	# decide your own consonant,kfghytml must be insteresting !!! 

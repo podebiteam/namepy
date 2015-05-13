@@ -4,6 +4,7 @@ __author__  = 'vickydasta'
 __date__    = '05/02/2015'
 __apps__    = 'namepylib'
 __version__ = '1.3'
+__libver__  = '1.2'
 
 import random,urllib2
 from random import shuffle as randomize

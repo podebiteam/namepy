@@ -4,6 +4,7 @@ import random
 import urllib2
 import string
 import requests
+import re
 from random import shuffle as randomize
 
 u='http://'
@@ -12,9 +13,9 @@ remote_host = 'wiktionary.org/wiki'
 remote_host_ = 'www.wordnik.com'
 url=u+lang+remote_host
 
-def findwordmeaning(word):
-    req = requests.get('https://en.wiktionary.org/wiki/'+word)
-    if 'Wiktionary does not yet have an entry for '+word not in req:
+def findwordmeaning(word,lang):
+    req = requests.get('https://'+lang+'.wiktionary.org/wiki/'+word)
+    if re.search('Wiktionary does not yet have an entry for ',word) == '':
         return False
     else:
     	return True
@@ -88,18 +89,20 @@ def DetectRegion(name,knwon=False):
 		if len(name) == 5:
 			#start analyzing name
 			if name[4] in 'zjv':
-				region= 'Russian'
+				return 'RU'
 			elif name[0] == 's' and name[4] == '0':
-				region='Java Island (Indonesia)'
+				return 'Java'
 			elif name[4] == 'y' and name[0] != 'v' and name[1] != 'i' and name[2] != 'c':
-				region = 'Chile ('
-			return
+				return 'CH'
+		else:
+			pass
+	else:
+		pass
 
-def G5(list1,list2):
+def G(list1,list2):
 	#select random alphabet
 	for char in list1:
 		for b in list2:
 			i=random.choice([0,1,2,3,4,5,6,7])
 			ind=random.choice([0,1,2,3,4,])
-			return a+b+list1[INDEX2]+list2[INDEX2]+list1[INDEX1]
-
+		return a+b+list1[INDEX2]+list2[INDEX2]+list1[INDEX1]	
